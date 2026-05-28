@@ -1,0 +1,9 @@
+node_modules
+uploads
+output
+server_log.txt
+test_server.js
+.vercel
+*.mp4
+*.MOV
+*.AVI

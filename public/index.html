@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShortMaker AI | Transform Long Videos into Shorts</title>
+    <meta name="description" content="AI-powered tool to automatically convert long YouTube videos into viral vertical shorts.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>ShortMaker <span style="color: var(--primary);">AI</span></h1>
+        <p>Convert long format videos into viral vertical shorts in seconds</p>
+    </header>
+
+    <main class="container">
+        <section class="upload-card">
+            <div class="drop-zone" id="drop-zone">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag and drop your video file here</p>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.7;">MP4, MOV, AVI supported</p>
+                <input type="file" id="file-input" accept="video/*">
+            </div>
+            
+            <div id="file-info" style="margin-top: 1.5rem; display: none;">
+                <p id="file-name" style="font-weight: 600;"></p>
+                <button class="btn" id="process-btn">Magic Shortify ✨</button>
+            </div>
+
+            <div class="status-section" id="status-section">
+                <h3 id="status-text">Processing your video...</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <p id="progress-percent" style="color: var(--text-muted);">0%</p>
+            </div>
+        </section>
+
+        <section id="results-section" style="display: none; width: 100%; margin-top: 4rem;">
+            <h2 style="margin-bottom: 2rem; text-align: center;">Your Generated Shorts</h2>
+            <div class="clips-grid" id="clips-grid">
+                <!-- Clips will be injected here -->
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 5rem; padding: 2rem; color: var(--text-muted); text-align: center;">
+        <p>&copy; 2026 ShortMaker AI. Built with ❤️ for Creators.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
